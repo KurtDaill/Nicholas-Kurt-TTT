@@ -1,3 +1,5 @@
+package java.com.example.kdail_000.nicholas_kurt_ttt;
+
 /**
  * Created by kdail_000 on 9/12/2018.
  */
@@ -13,16 +15,13 @@ public class Grid
 
     public boolean setTile(int x, int y, gridSpace gS) {
         if (0 < x < 2 && 0 < y < 2) {
-            if (gameBoard[x][y] == gridSpace.BLANK()) {
-                gameBoard[x][y] = gS;
-                return true;
-            }
+
         }
         return false;
     }
 
-    public void getTileData(int x, int y) {
-
+    public gridSpace getTileData(int x, int y) {
+        return gridSpace[x][y];
     }
 
     public Grid() {
